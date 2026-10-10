@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嶺 颯太 (Sota Mine) - Portfolio</title>
+    <meta name="description" content="岡山大学 ヘルスシステム統合科学学域 助教 嶺颯太のホームページ。テラヘルツ波を用いた非破壊センシングの研究紹介、論文、受賞、学会発表など。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>嶺 颯太（みね そうた / Sota Mine）<span>博士（工学）</span></h1>
+        <div class="subtitle">岡山大学 ヘルスシステム統合科学学域 助教</div>
+        
+        <div class="contact-with-image">
+            <div class="contact-info">
+                <p><strong>兼任:</strong> 名古屋大学大学院工学研究科 招へい教員 | 理化学研究所 光量子工学研究センター 客員研究員</p>
+                <p><strong>住所:</strong> 〒700-8530 岡山県岡山市北区津島中3-1-1</p>
+                <!-- 方法2: [at] 表記によるスパム防止 -->
+                <p><strong>TEL:</strong> 086-251-8114 | <strong>E-mail:</strong> sota_mine [at] okayama-u.ac.jp <small style="color:var(--text-secondary);">(※ [at] を @ に変えてお送りください)</small></p>
+            </div>
+            <div class="profile-image-container">
+                <!-- 写真ファイル名を適宜置き換えてください -->
+                <img src="images/sotamine.jpg" alt="嶺 颯太" class="profile-image">
+            </div>
+        </div>
+    </header>
+
+    <!-- タブナビゲーション（ホーム・研究紹介・研究成果） -->
+    <div class="tabs">
+        <button class="tab-button active" data-tab="home">ホーム(プロフィール・学歴・職歴)</button>
+        <button class="tab-button" data-tab="research">研究紹介</button>
+        <button class="tab-button" data-tab="achievements">研究成果</button>
+    </div>
+
+    <!-- 1. ホーム（プロフィール・学歴・職歴） -->
+    <div id="home" class="tab-content active">
+        <h2>研究について</h2>
+        <p class="research-summary">
+            テラヘルツ波は、紙・樹脂・包装材などを透過し、物質ごとに固有の吸収スペクトルを示す電磁波です。私は、ニオブ酸リチウム結晶を用いたテラヘルツパラメトリック光源・検出器の高出力化と高感度化に取り組み、段ボールなど厚い遮蔽物越しの試薬識別をはじめ、X線を使わない安全な非破壊検査技術の開発を進めています。リアルタイム分光やイメージングへの応用を通じて、食品・医薬品・工業製品などの検査への社会実装を目指しています。
+        </p>
+        <p class="more-link"><a href="#research" data-open-tab="research">研究紹介を詳しく見る →</a></p>
+
+        <h2>研究者情報リンク</h2>
+        <div class="profile-links">
+            <a class="profile-link" href="https://scholar.google.com/citations?user=wOls1_wAAAAJ&amp;hl=ja" target="_blank" rel="noopener">
+                <span class="profile-link-name">Google Scholar</span>
+                <span class="profile-link-desc">論文・被引用数</span>
+            </a>
+            <a class="profile-link" href="https://researchmap.jp/s.mine" target="_blank" rel="noopener">
+                <span class="profile-link-name">researchmap</span>
+                <span class="profile-link-desc">研究者情報・業績一覧</span>
+            </a>
+        </div>
+
+        <h2>経歴・職歴</h2>
+        <ul class="timeline">
+            <li><span class="timeline-date">2022年4月</span>日本学術振興会 特別研究員 DC1 (~ 2024/3)</li>
+            <li><span class="timeline-date">2022年9月</span>ケベック高等工科大学 博士インターン (~ 2023/1)</li>
+            <li><span class="timeline-date">2023年5月</span>理化学研究所 リサーチアソシエイト (~ 2024/3)</li>
+            <li><span class="timeline-date">2024年4月</span>日本学術振興会 特別研究員 PD (~ 2025/2)</li>
+            <li><span class="timeline-date">2024年4月</span>理化学研究所 客員研究員 (~ 2025/3)</li>
+            <li><span class="timeline-date">2025年3月</span>理化学研究所 光量子工学研究センター テラヘルツイメージング研究チーム 基礎科学特別研究員 (~ 2026/3)</li>
+            <li><span class="timeline-date">2025年4月</span>名古屋大学大学院 工学研究科 電子工学専攻 招へい教員</li>
+            <li><span class="timeline-date">2026年4月</span>岡山大学学術大学院 ヘルスシステム統合科学学域 助教</li>
+            <li><span class="timeline-date">2026年6月</span>理化学研究所 光量子工学研究センター 客員研究員</li>
+        </ul>
+
+        <h2>学歴</h2>
+        <ul class="timeline">
+            <li><span class="timeline-date">2020年3月</span>名古屋大学 工学部 電気電子・情報工学科 卒業</li>
+            <li><span class="timeline-date">2022年3月</span>名古屋大学大学院 工学研究科 電子工学専攻 博士前期課程 卒業</li>
+            <li><span class="timeline-date">2024年3月</span>名古屋大学大学院 工学研究科 電子工学専攻 博士後期課程 卒業</li>
+        </ul>
+    </div>
+
+    <!-- 2. 研究紹介（テラヘルツ波を用いた非破壊センシング） -->
+    <div id="research" class="tab-content research">
+
+        <!-- メインビジュアル -->
+        <div class="research-hero">
+            <div class="research-hero-label">岡山大学 ヘルスシステム統合科学学域・紀和研究室</div>
+            <p class="research-hero-title">包装・樹脂・紙の“向こう側”を、<br>X線を使わずに検査する</p>
+            <p class="research-hero-lead">多くの物質を透過し、人体に安全、<br>かつ成分の識別まで可能な次世代の非破壊センシング技術「テラヘルツ波」</p>
+        </div>
+
+        <!-- ページ内リンク -->
+        <nav class="research-nav" aria-label="研究紹介の目次">
+            <a href="#r-about">テラヘルツ波とは</a>
+            <a href="#r-transmission">透過特性</a>
+            <a href="#r-comparison">手法比較</a>
+            <a href="#r-strengths">技術の強み</a>
+            <a href="#r-imaging">イメージング例</a>
+            <a href="#r-system">測定システム</a>
+            <a href="#r-applications">想定される用途</a>
+            <a href="#r-contact">お問い合わせ</a>
+        </nav>
+
+            <!-- ===== テラヘルツ波とは ===== -->
+            <section id="r-about" class="r-section">
+                <h2>テラヘルツ波とは</h2>
+
+                <!-- 電磁波スペクトルの帯 -->
+                <div class="spectrum-band" aria-label="電磁波スペクトル">
+                    <div class="band-row">
+                        <span class="band">電波</span>
+                        <span class="band">ミリ波</span>
+                        <span class="band band-thz">テラヘルツ波</span>
+                        <span class="band">赤外線</span>
+                        <span class="band">可視光</span>
+                        <span class="band">紫外線</span>
+                        <span class="band">X線</span>
+                    </div>
+                    <div class="band-scale">
+                        <span class="scale-left">0.3 THz</span>
+                        <span class="scale-right">10 THz</span>
+                    </div>
+                </div>
+
+                <!-- 3つの特長 -->
+                <div class="property-grid">
+                    <div class="property">
+                        <h3>多くの物質を透過</h3>
+                        <p>包装の中身まで測れる</p>
+                    </div>
+                    <div class="property">
+                        <h3>人体に安全</h3>
+                        <p>被ばくの心配がない</p>
+                    </div>
+                    <div class="property">
+                        <h3>成分を見分けられる</h3>
+                        <p>吸収スペクトルで物質を識別</p>
+                    </div>
+                </div>
+
+                <!-- 郵便内部の違法薬物検査 ＋ 吸収スペクトル例 -->
+                <div class="grid-2 about-figures">
+                    <figure class="figure">
+                        <figcaption class="figure-title">郵便内部の違法薬物検査</figcaption>
+                        <img src="images/research/postal-inspection.jpg" alt="封筒の中の3種類の試料と、テラヘルツ波でMDMA・アスピリン・メタンフェタミンを識別した画像">
+                        <p class="cite">K. Kawase et al., Optics Express 11, 2549–2554 (2003)</p>
+                    </figure>
+                    <figure class="figure">
+                        <figcaption class="figure-title">テラヘルツ波帯の吸収スペクトル例</figcaption>
+                        <img src="images/research/spectrum.png" alt="Maltose、Glucose、Al(OH)3 と参照（ref）の透過率スペクトル。物質ごとに異なる周波数で吸収が現れる">
+                        <p class="figure-note">物質ごとに固有の周波数で吸収（透過率の落ち込み）が現れるため、成分を識別できます。</p>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- ===== 透過するもの・しないもの ===== -->
+            <section id="r-transmission" class="r-section">
+                <h2>透過するもの・しないもの</h2>
+                <div class="grid-2">
+                    <div class="box ok">
+                        <h3>◎ 透過する</h3>
+                        <p>半導体・プラスチック・セラミックス・紙・ビニル・木材・繊維・乾燥食品・氷・粉体・試薬・錠剤・有機溶剤・油 など</p>
+                    </div>
+                    <div class="box ng">
+                        <h3>× 透過しにくい</h3>
+                        <p>水・水分の多いもの、金属、ガラス。生体内部の測定は困難。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== 既存技術との比較 ===== -->
+            <section id="r-comparison" class="r-section">
+                <h2>既存の非破壊センシング手法との比較</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>評価項目</th>
+                                <th>X線</th>
+                                <th>ミリ波</th>
+                                <th>超音波</th>
+                                <th>THz-TDS<br><span class="th-sub">（一般的手法）</span></th>
+                                <th class="highlight-header">本研究室の<br>THzシステム</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>人体への影響</strong></td>
+                                <td>被ばくあり</td>
+                                <td>なし</td>
+                                <td>なし</td>
+                                <td>なし</td>
+                                <td class="highlight-col">なし</td>
+                            </tr>
+                            <tr>
+                                <td><strong>非接触での測定</strong></td>
+                                <td>可能</td>
+                                <td>可能</td>
+                                <td>水やゲルが必要</td>
+                                <td>可能</td>
+                                <td class="highlight-col">可能</td>
+                            </tr>
+                            <tr>
+                                <td><strong>紙・樹脂の画像化</strong></td>
+                                <td>難しい</td>
+                                <td>可能</td>
+                                <td>空気層に弱い</td>
+                                <td>可能</td>
+                                <td class="highlight-col">可能</td>
+                            </tr>
+                            <tr>
+                                <td><strong>分解能（波長）</strong></td>
+                                <td>10 nm以下</td>
+                                <td>1～10 mm</td>
+                                <td>0.15～1.5 mm</td>
+                                <td>1 mm以下</td>
+                                <td class="highlight-col">1 mm以下</td>
+                            </tr>
+                            <tr>
+                                <td><strong>厚い遮蔽物越しの測定</strong></td>
+                                <td>可能</td>
+                                <td>可能</td>
+                                <td>可能</td>
+                                <td>限られる</td>
+                                <td class="highlight-col">段ボール30 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>位置ずれへの許容</strong></td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>数 mm</td>
+                                <td class="highlight-col">60 mm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="note-bar"><strong>導入例：</strong>自動車の塗装膜の測定では、テラヘルツ計測がすでに実用化されています</p>
+            </section>
+
+            <!-- ===== 技術の強み ===== -->
+            <section id="r-strengths" class="r-section">
+                <h2>私たちの技術の強み</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>1. 準単色方式</h3>
+                        <p>必要な周波数に絞るため、<em class="accent">周波数ごとの強度が高い</em></p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>2. 位置ずれに強い</h3>
+                        <p>パルス幅が<em class="accent">約200 ps</em>と長く、試料の位置ずれを許容できる</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>3. 厚い遮蔽物越しに測れる</h3>
+                        <p>検出面積が大きく散乱に強く、<em class="accent">THz-TDSを超える厚さに対応</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== イメージング例 ===== -->
+            <section id="r-imaging" class="r-section">
+                <h2>イメージング例</h2>
+                <div class="imaging-grid">
+
+                    <!-- 段ボール越しの試薬識別 -->
+                    <article class="imaging-card imaging-tall">
+                        <h3>段ボール越しの試薬識別</h3>
+                        <div class="imaging-fill">
+                            <img src="images/research/cardboard-reagent.png" alt="Lactose、Maltose、Al(OH)3 などの試薬を厚さ30 mmの段ボール越しに測定し、識別したイメージング結果">
+                        </div>
+                        <p class="caption">厚さ30 mmの段ボール越し（−82 dB）でも試薬の種類を識別</p>
+                        <p class="cite">K. Murate et al., IEEE J. Sel. Top. Quantum Electron. 29, 1–13 (2023)</p>
+                    </article>
+
+                    <!-- 紙越しの刃物検出 -->
+                    <article class="imaging-card">
+                        <h3>紙越しの刃物検出</h3>
+                        <div class="imaging-row">
+                            <img src="images/research/knife-paper.jpg" alt="刃物を隠した冊子" class="img-small">
+                            <img src="images/research/knife-photo.jpg" alt="検出対象の折りたたみナイフ" class="img-narrow">
+                            <img src="images/research/knife-image.png" alt="紙越しに刃物の形状が浮かび上がったテラヘルツイメージング結果" class="img-wide">
+                        </div>
+                        <p class="cite">H. Sakai et al., Optics Letters 45, 3905–3908 (2020)</p>
+                    </article>
+
+                    <!-- 粉材料の混ざり具合の可視化 -->
+                    <article class="imaging-card">
+                        <h3>粉材料の混ざり具合の可視化</h3>
+                        <div class="imaging-row">
+                            <img src="images/research/powder-mix-sample.png" alt="濃度20%、40%、60%、80%の粉末試料（40 mm角）" class="img-small">
+                            <img src="images/research/powder-mix-result.png" alt="(a) 濃度ごとのイメージング結果、(b) 混ざり具合の不均一を可視化した結果" class="img-wide">
+                        </div>
+                        <p class="cite">K. Murate et al., IEEE J. Sel. Top. Quantum Electron. 29, 1–13 (2023)</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- ===== 測定システム ===== -->
+            <section id="r-system" class="r-section">
+                <h2>測定システム</h2>
+                <div class="system-layout">
+                    <figure class="system-photo">
+                        <figcaption>レーザー電源</figcaption>
+                        <img src="images/research/laser-power.jpg" alt="レーザー電源装置">
+                    </figure>
+                    <div class="system-plus" aria-hidden="true">＋</div>
+                    <figure class="system-photo system-photo-wide">
+                        <figcaption>THz波パラメトリック発生器</figcaption>
+                        <div class="photo-wrap">
+                            <img src="images/research/thz-generator.jpg" alt="光学定盤上のテラヘルツ波パラメトリック発生器（全長54 cm）">
+                            <span class="photo-label">THz</span>
+                        </div>
+                        <div class="dimension"><span>54 cm</span></div>
+                    </figure>
+                    <div class="spec-box">
+                        <h3>基本情報</h3>
+                        <ul>
+                            <li><strong>周波数領域：</strong>1 – 2.5 THz</li>
+                            <li><strong>ピーク出力：</strong>30 W</li>
+                            <li><strong>繰り返し周波数：</strong>50 Hz</li>
+                            <li><strong>消費電力：</strong>100 W</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="cite cite-center">S. Mine et al., Optics Letters 51, 3793–3796 (2026)</p>
+            </section>
+
+            <!-- ===== 想定される用途 ===== -->
+            <section id="r-applications" class="r-section">
+                <h2>想定される用途</h2>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <img src="images/research/icons/food.svg" alt="" class="app-icon">
+                        <div><h3>食品</h3><p>乾燥食品の異物検査</p></div>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/research/icons/medicine.svg" alt="" class="app-icon">
+                        <div><h3>医薬品</h3><p>錠剤・試薬の検査</p></div>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/research/icons/industrial.svg" alt="" class="app-icon">
+                        <div><h3>工業部品</h3><p>樹脂・セラミックス</p></div>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/research/icons/packaging.svg" alt="" class="app-icon">
+                        <div><h3>紙・梱包</h3><p>封筒・段ボール越し</p></div>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/research/icons/composite.svg" alt="" class="app-icon">
+                        <div><h3>複合材料</h3><p>GFRPの内部欠陥・剥離</p></div>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/research/icons/coating.svg" alt="" class="app-icon">
+                        <div><h3>塗装膜</h3><p>膜の厚さ測定</p></div>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/research/icons/agriculture.svg" alt="" class="app-icon">
+                        <div><h3>農業</h3><p>種子・作物の水分評価</p></div>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/research/icons/building.svg" alt="" class="app-icon">
+                        <div><h3>建材</h3><p>断熱材・壁内部の検査</p></div>
+                    </div>
+                    <div class="app-item">
+                        <img src="images/research/icons/heritage.svg" alt="" class="app-icon">
+                        <div><h3>文化財</h3><p>絵画・壁画の非破壊調査</p></div>
+                    </div>
+                </div>
+            </section>
+
+    
+
+        <!-- お問い合わせ -->
+        <section id="r-contact" class="r-section research-contact">
+            <p class="research-contact-name">岡山大学　ヘルスシステム統合科学学域・紀和研究室　助教・嶺 颯太</p>
+            <p>E-mail：sota_mine [at] okayama-u.ac.jp <small>(※ [at] を @ に変えてお送りください)</small></p>
+            <p>Web：<a href="https://www.okayama-u.ac.jp/user/eng_aemt/" target="_blank" rel="noopener">https://www.okayama-u.ac.jp/user/eng_aemt/</a></p>
+        </section>
+    </div>
+
+    <!-- 3. 研究成果（サブタブ：論文・受賞・国際学会・国内学会・記事など） -->
+    <div id="achievements" class="tab-content">
+        <div class="sub-tabs">
+            <button class="sub-tab-button active" data-subtab="papers">論文</button>
+            <button class="sub-tab-button" data-subtab="awards">受賞</button>
+            <button class="sub-tab-button" data-subtab="international">国際学会</button>
+            <button class="sub-tab-button" data-subtab="domestic">国内学会・ポスター</button>
+            <button class="sub-tab-button" data-subtab="others">記事・特許・予算</button>
+        </div>
+
+        <!-- 3-1. 論文 -->
+        <div id="papers" class="sub-tab-content active">
+            <h2>原著論文 </h2>
+            <p><small>※ 筆頭著者論文（1st）は背景色を強調しています。</small></p>
+            <ol>
+                <li class="first-author"><strong>Sota Mine</strong>, Joel Edouard Nkeck, François Blanchard, Kodo Kawase, Kosuke Murate, “Enhancing Output Power of LN‑Based THz Sources Using a Vertically Elongated Elliptical Beam,” <em>Journal of Infrared, Millimeter, and Terahertz Waves</em> 47, (62) (2026) DOI: <a href="https://doi.org/10.1007/s10762-026-01170-z" target="_blank">10.1007/s10762-026-01170-z</a></li>
+                <li>Fuma Kawano, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, ”Interferometer-Free Phase Measurement of Terahertz-Wave via Parametric Detection,” <em>Optics Express</em> 34, (17), pp.32594-32603 (2026) DOI: 10.1364/OE.607288</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, “Two beam pumped terahertz parametric generator,” <em>Optics Letters</em> 51, (13), pp. 3793-3796 (2026) DOI: <a href="https://doi.org/10.1364/OL.604191" target="_blank">10.1364/OL.604191</a></li>
+                <li>Akitoshi Niidome, <strong>Sota Mine</strong>, Kodo Kawase, and Kosuke Murate, "Probing the terahertz wave distribution inside a crystal in a terahertz wave parametric source," <em>Optics Express</em> 34, (11), pp. 20414-20422 (2026) DOI: <a href="https://doi.org/10.1364/OE.595710" target="_blank">10.1364/OE.595710</a></li>
+                <li>Joel Edouard Nkeck, Gabriel Gandubert, Jonathan Lafreinière-Greig, <strong>Sota Mine</strong>, Xavier Ropagnol, Kosuke Murate, François Blanchard, ”Single-shot time-domain imaging of terahertz pulses via nonlinear optical frequency mixing,” <em>Optica</em> 13 (2), (2026)</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, Kosuke Murate, “Recent advances in terahertz parametric generation and detection using lithium niobate,” <em>Applied Physics Express</em> 19, 020102 (2026).</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kaito Abe, Shusaku Nakajima, Joel Edouard Nkeck, Kodo Kawase, François Blanchard, Kosuke Murate and Chiko Otani, ”Pulse width dependence of terahertz parametric generation in the sub-picosecond regime,” <em>Optics Letters</em> 51 (1), pp.157-160 (2026)</li>
+                <li>Toshiki Kinoshita, <strong>Sota Mine</strong>, Shin’ichiro Hayashi, Kodo Kawase, Kosuke Murate, "Terahertz-Wave Parametric Detection Using Pulse Train Pump Beam for Remote Sensing Applications," <em>Journal of Infrared, Millimeter, and Terahertz Waves</em>, Vol. 46, Article No. 78 (2025)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase, "High-speed and single-shot terahertz spectroscopy using a wavelength-tunable source [Invited]," <em>Applied Optics</em>, Vol. 64, Issue 30, pp. F32-F45 (2025)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, ”Multi-wavelength terahertz parametric generation using higher-order Stokes beams,” <em>IEEE Transactions on Terahertz Science and Technology</em> 15 (5), pp.781-786 (2025)</li>
+                <li>Hyuga Inoue, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Large tolerance for incidence angle in terahertz parametric detection,” <em>Scientific Reports</em> 15, 20995 (2025)</li>
+                <li>Toshiki Kinoshita, <strong>Sota Mine</strong>, Shin’ichiro Hayashi, Kodo Kawase, Kosuke Murate, “Pulse train generation using a Fabry-Perot cavity with an integrated optical amplifier and its application to parametric wavelength conversion,” <em>Journal of Applied Physics</em> 137 (21), p.213107 (2025)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Joel Edouard Nkeck, Jonathan Lafreinière-Greig, Gabriel Gandubert, Kosuke Murate, François Blanchard, “Single-shot up-conversion terahertz spectrometer with high frequency resolution,” <em>Optica</em> 12 (2), pp.239-245 (2025) DOI: <a href="https://doi.org/10.1364/OPTICA.538030" target="_blank">10.1364/OPTICA.538030</a></li>
+                <li class="first-author"><strong>Sota Mine</strong>, Shiki Tanaka, Kodo Kawase, Kosuke Murate, “Terahertz parametric detection using a lithium tantalate,” <em>Optics Letters</em> 50 (2), pp. 527-529 (2025)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Gabriel Gandubert, Joel Edouard Nkeck, Xavier Ropagnol, Kosuke Murate, François Blanchard, “Broadband heterodyne electro-optic sampling using a lithium niobate ridge-waveguide,” <em>Applied Physics Express</em> 17 (4), p.042001 (2024)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, “Cascaded terahertz parametric generation under noncollinear phase matching condition,” <em>Journal of Infrared, Millimeter, and Terahertz Waves</em> 45 (1) pp. 116–123 (2024)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Naoya Yamamoto, Kodo Kawase, Kosuke Murate, “Collinear injection-seeded terahertz parametric generator”, <em>APL Photonics</em>, 9 (3), p.036103 (2024) DOI: <a href="https://doi.org/10.1063/5.0182369" target="_blank">10.1063/5.0182369</a></li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase, “Terahertz Parametric Generators and Detectors for Nondestructive Testing Through High-Attenuation Packaging Materials,” <em>IEEE Journal of Selected Topics in Quantum Electronics</em>, 29 (5), pp 1-13 (2023)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Yuki Torii, Hyuga Inoue, Kodo Kawase, “Wide dynamic range and real-time reagent identification and imaging using multi-wavelength terahertz parametric generation and machine learning,” <em>Scientific Reports</em>, 13 (1), pp.12743 (2023)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Mitsuki Abe, Kodo Kawase, Kosuke Murate, "Efficient terahertz parametric source using flat pump beam," <em>IEEE Transactions on Terahertz Science and Technology</em>, 13 (2), pp.153 - 157 (2023) DOI: 10.1109/TTHZ.2022.3231965</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Multi-wavelength terahertz parametric generator using a seed laser based on four wave mixing," <em>Photonics</em>, 9 (4), pp.258 (2022)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Noise-free terahertz-wave parametric generator," <em>Optics Letters</em>, 47 (5), pp.1113-1116 (2022)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Real-time wide dynamic range spectrometer using a rapidly wavelength-switchable terahertz parametric source", <em>Optics Letters</em>, 46 (11), pp.2618-2621 (2021)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "High-Power ASE-Free Fast Wavelength-Switchable External Cavity Diode Laser," <em>Applied Optics</em>, 60 (7), pp.1953–1957 (2021)</li>
+            </ol>
+        </div>
+
+        <!-- 3-2. 受賞 -->
+        <div id="awards" class="sub-tab-content">
+            <h2>受賞歴</h2>
+            <ol>
+                <li><strong>嶺颯太</strong>, コニカミノルタ画像科学奨励賞, 受賞題目”アナログ的短時間フーリエ変換による次世代非破壊テラへルツセンシング” (2026/3)</li>
+                <li><strong>Sota Mine</strong>, Best contributory oral presentation prize, International Conference on Electronics, Photonics and Terahertz Technology (InCEPTT), 受賞題目: "One-Shot Detection of Broadband Terahertz Waves in the Frequency Domain," (2024/12)</li>
+                <li><strong>嶺颯太</strong>, 最優秀若手発表賞, テラヘルツ科学の最先端XI, 受賞題目”広帯域テラヘルツ波の周波数領域におけるワンショット検出” (2024/10)</li>
+                <li><strong>嶺颯太</strong>, 論文発表奨励賞, レーザー学会学術講演会第44回年次大会, 受賞題目 "同軸入射2波長による光注入型テラへルツパラメトリック発生” (2024/5)</li>
+                <li><strong>嶺颯太</strong>, Grand Prix, Nagoya University 3 Minute Thesis competition (NU3MT), 受賞題目 "テラヘルツ波 人類最後の未踏電磁周波数帯 “ (2023/10)</li>
+                <li><strong>嶺颯太</strong>, 学術奨励賞, 名古屋大学, 受賞題目：”高強度光注入型テラへルツパラメトリック発生器の開発” (2023/6)</li>
+                <li><strong>嶺颯太</strong>, 赤崎学生奨励賞, 名古屋大学, 受賞題目：”ノイズフリー化による理想テラヘルツ光源の開発” (2022/8)</li>
+                <li><strong>嶺颯太</strong>, 原島博学術奨励賞, 公益財団法人電気電子情報学術振興財団, 受賞題目：”テラヘルツ非線形光学発展に向けた高電界単色光源の開発” (2022/6)</li>
+                <li><strong>Sota Mine</strong>, Excellent Student Award, IEEE Nagoya Section (2022/3)</li>
+                <li><strong>Sota Mine</strong>, 46th International Conference on Infrared, Millimeter, and Terahertz Waves (IRMMW-THz 2021), Best Student Presentation Award, 受賞題目："Development Of A High Signal To Noise Ratio Terahertz-wave Parametric Generator," (2021/9)</li>
+                <li><strong>嶺颯太</strong>, 令和2年度レーザー学会中部支部若手研究発表会, 優秀発表賞, 受賞題目："高速波長切替型テラヘルツ分光器の開発" (2020/12)</li>
+                <li><strong>嶺颯太</strong>, 優秀学生発表賞, テラヘルツ科学の最先端VII, 受賞題目：”デジタルマイクロミラーデバイスを用いたリアルタイムテラヘルツ分光器の開発” (2020/11)</li>
+            </ol>
+
+            <h2>学生受賞（指導・共著指導等）</h2>
+            <ol>
+                <li>山本直弥, 修士中間発表賞, 名古屋大学, 受賞題目:“同軸入射2波長による光注入型テラへルツパラメトリック発生” (2022/12)</li>
+                <li>新留祥稔, 修士中間発表賞, 名古屋大学, 受賞題目 ”パラメトリック光源における結晶内部のテラヘルツ強度プロービング” (2024/12)</li>
+                <li>新留祥稔, 優秀発表賞, 令和6年度レーザー学会中部支部若手研究発表会, 受賞題目 “光注入型テラヘルツ波パラメトリック発生器におけるLiNbO3 結晶内部の強度プロービング” (2025/1/6)</li>
+                <li>Akitoshi Niidome, Excellent Student Award, IEEE Nagoya Section (2026/3/25)</li>
+            </ol>
+        </div>
+
+        <!-- 3-3. 国際学会 -->
+        <div id="international" class="sub-tab-content">
+            <h2>国際学会発表 </h2>
+            <ol>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, and Kodo Kawase, "High-speed terahertz imaging using a parametric detector (Invited)," SPIE OPTICS+PHOTONICS 2026, San diego, USA (Aug. 23-27, 2026).</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, and Kodo Kawase, "High-Speed Chemical Identification Enabled by Terahertz Parametric Wavelength Conversion," 16th International Conference on Metamaterials, Photonic Crystals and Plasmonics, Dublin, Ireland (Jul. 14 - 17, 2026).</li>
+                <li>K. Kawase, <strong>S. Mine</strong>, and K. Murate, "Realtime spectroscopy using THz parametric generation/detection (Invited),” AdvOptiX-2026, Shimane, Japan (May 25-27, 2026).</li>
+                <li>K. Murate, <strong>S. Mine</strong>, K. Kawase, "Terahertz Scanner System based on Parametric Wavelength Conversion," Taiwan THz spring workshop 2026, Kaohsiung, Taiwan (May 1, 2026).</li>
+                <li>K. Murate, <strong>S. Mine</strong>, K. Kawase, "Terahertz Imaging Technique Based on Terahertz Parametric Wavelength Conversion (Invited)," ISUPTW 2026, Hangzhou, China (Apr. 27 - 30, 2026).</li>
+                <li>Taichi Kawakami, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, “Terahertz Single-Pixel Imaging System Using an Injection-Seeded Terahertz Parametric Generator and Detector,” ALPS2026, Yokohama, Japan (Apr. 20-24, 2026)</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, and Kosuke Murate, "Evolution of THz parametric generation and detection and their applications (Invited),” SPIE Photonics Europe, Strasbourg, France (Apr. 12 – 16, 2026).</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, and Kodo Kawase, "Spectroscopic Terahertz Imaging using Parametric Generation and Detection (Invited)," OTST2026, Durhum, NC, USA (Apr. 12-17, 2026).</li>
+                <li>J. E. Nkeck, G. Gandubert, <strong>S. Mine</strong>, J. Lafrenière-Greig, X. Ropagnol, K. Murate, F. Blanchard, "Noncollinear single-shot detection of terahertz waves (Invited)," SPIE Photonics West, San Francisco, USA (Mar. 4, 2026).</li>
+                <li>Gabriel Gandubert, Joel Edouard Nkeck, Jonathan Lafrenière-Greig, Xavier Ropagnol, <strong>Sota Mine</strong>, Kosuke Murate, Francois Blanchard, "Single-shot detection of terahertz waves generated with an oscillator laser," Photonics North 2025, Ottawa, Canada (May 20, 2025).</li>
+                <li>Joel Edouard Nkeck, Gabriel Gandubert, <strong>Sota Mine</strong>, Jonathan Lafrenière-Greig, Xavier Ropagnol, Kosuke Murate, Francois Blanchard, "Single-shot broadband detection of terahertz waves (Invited)," Photonics North 2025, Ottawa, Canada.</li>
+                <li>Joel Edouard Nkeck, Gabriel Gandubert, <strong>Sota Mine</strong>, Jonathan Lafrenière-Greig, Xavier Ropagnol, Kosuke Murate, Francois Blanchard, "Single-shot spatiotemporal detection of terahertz waves (Invited)," ALLS/TrUST Workshop, Montreal, Canada (2025).</li>
+                <li>Francois Blanchard, Gabriel Gandubert, Joel Edouard Nkeck, <strong>Sota Mine</strong>, Kosuke Murate, "Ultra-sensitive detection of terahertz waves: Horizon and hurdles (Keynote)," 7th Global Meet and Exhibition on Lasers, Optics & Photonics, Osaka, Japan (2025).</li>
+                <li class="first-author">Kosuke Murate, <strong>Sota Mine</strong>, “What is the difference between THz-wave parametric generation using a sub-ns laser and THz-wave generation using a fs laser? (Invited),” 2025 LN Workshop, Douhm, Germany (Nov. 24-25, 2025)</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, and Kosuke Murate, "Real-time Terahertz Spectroscopy using multi-wavelength is-TPG (Plenary)," EOP-2025, Dehradun, India (Nov. 18-20, 2025).</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, and Kosuke Murate, "Realtime THz spectroscopy using NLO crystals (Invited)," 3rd International Conference on Materials Science, Engineering and Technology, Singapore (Oct. 21 – 24, 2025).</li>
+                <li>Akitoshi Niidome, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, “Measurement of Terahertz Wave Intensity Distribution in the XY-plane Inside a Crystal...”, FTT 2025, Tokushima, Japan (Oct. 15-17, 2025)</li>
+                <li>Fuma Kawano, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Phase Measurement via Terahertz Parametric Detection," FTT 2025, Tokushima, Japan (Oct. 15-17, 2025)</li>
+                <li>Akitoshi Niidome, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, “Measurement of Terahertz Wave Intensity Inside a LiNbO3 Crystal...”, JSAP-Optica Joint Symposia, Aichi, Japan (Sep. 7-10, 2025)</li>
+                <li>Kouya Tsubota, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Fundamental Study Of A Terahertz Scanner Using Parametric Wavelength Conversion," JSAP-Optica Joint Symposia, Aichi, Japan (Sep. 7-10, 2025)</li>
+                <li>Kouya Tsubota, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Fundamental Study Of A Terahertz Scanner Using Parametric Wavelength Conversion," IRMMW-THz2025, Espoo, Finland (Aug. 17-22, 2025)</li>
+                <li>Fuma Kawano, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Phase Measurement Via Terahertz Parametric Detection," IRMMW-THz2025, Espoo, Finland (Aug. 17-22, 2025)</li>
+                <li>Akitoshi Niidome, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Intensity Probing inside Nonlinear Crystal of is-TPG," IRMMW-THz2025, Espoo, Finland (Aug. 17-22, 2025)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Terahertz Parametric Generator Pumped Exclusively By A Micro-chip Nd:YAG Laser," IRMMW-THz2025, Espoo, Finland (Aug. 17-22, 2025)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Francois Blanchard, and Kodo Kawase, "Progress and Applications in Terahertz Parametric Detection (Invited)," Taiwan THz Summer Workshop 2025, Hsinchu, Taiwan (Jun. 26-27, 2025)</li>
+                <li>Toshiki Kinoshita, <strong>Sota Mine</strong>, Shin’ichiro Hayashi, Kodo Kawase, Kosuke Murate, "Terahertz parametric detection with pulse train pump beam", SPIE Photonics West 2025, San Francisco, US (Jan. 25-30, 2025)</li>
+                <li>Akitoshi Niidome, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, “Intensity Probing inside Crystals of Injection-seeded Terahertz Wave Parametric Generator,” ALPS2025, Yokohama, Japan (Apr. 21-25, 2025)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase, "Real-time spectroscopic measurement using terahertz parametric generator and detector (Invited)," Taiwan THz Winter Workshop 2025, Kaohsiung, Taiwan (Jan. 13, 2025)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase, "Single-shot Terahertz Spectroscopy Based on Terahertz Parametric Generator and Detector (Invited)," InCEPTT, New Delhi, India (Dec. 1-4, 2024)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kosuke Murate, Joel Nkeck, Chiko Otani, Kodo Kawase, François Blanchard, "One-Shot Detection of Broadband Terahertz Waves in the Frequency Domain," InCEPTT, New Delhi, India (Dec. 1-4, 2024)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kosuke Murate, Joel Nkeck, Chiko Otani, Kodo Kawase, François Blanchard, ”Wavenumber Domain Spectroscopy Using Broadband Terahertz Parametric Detection,” IRMMW-THz 2024, Perth, Australia (Sep. 1-6, 2024)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Naoya Yamamoto, Ryosuke Suzuki, Kodo Kawase, ”Terahertz Parametric Generator With More Than 10 Wavelengths For One-shot Spectroscopy (Keynote),” IRMMW-THz 2024, Perth, Australia (Sep. 1-6, 2024)</li>
+                <li>Hyuga Inoue, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, ”Extreme Tolerance Of Terahertz Parametric Detection,” IRMMW-THz 2024, Perth, Australia (Sep. 1-6, 2024)</li>
+                <li>Tomoki Tanetani, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, ”Reagent Identification Via Terahertz Single-pixel Spectroscopic Imaging Through Packaging Materials,” IRMMW-THz 2024, Perth, Australia (Sep. 1-6, 2024)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Chiko Otani, Kosuke Murate, François Blanchard, “Real-time Spectroscopy of Broadband THz-wave with High Frequency Resolution (Invited),” AES2024, Rome, Italy (June 25-28, 2024)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase “Real-time Spectroscopy Using Terahertz Parametric Generator and Detector (Invited),” AES2024, Rome, Italy (June 25-28, 2024)</li>
+                <li>Tomoki Tanetani, Kento Maenaka, <strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Single-pixel spectroscopic imaging through packaging materials using terahertz waves," ALPS2024, Yokohama, Japan (Apr. 22-26, 2024).</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, Kosuke Murate, "Non-destructive inspection of chemicals in mail envelopes using THz parametric generator (Invited)," 20th WCNDT, Incheon, Korea (May 27-31, 2024)</li>
+                <li>Francois Blanchard, Joel Edouard Nkeck, <strong>Sota Mine</strong>, and Kosuke Murate, “Unlocking the Potential: Integrating Broadband Impulse and Frequency Parametric Detection in Terahertz Spectrometer (Invited),” National University of Singapore.</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kosuke Murate, François Blanchard, “One-shot terahertz parametric detection of broadband terahertz pulse (Invited),” 11th International Workshop on Terahertz Technology and Applications, Kaiserslautern, Germany (Mar. 13-14, 2024)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase, "Recent advances in THz parametric generation and detection techniques (Invited)," Asia Light Conference in Singapore (Mar. 5-8, 2024).</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, François Blanchard, "Terahertz parametric detection for broadband terahertz pulse (Invited)," ICECOM 2023, Dubrovnik, Croatia (Sept. 27-29, 2023).</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Naoya Yamamoto, Kodo Kawase, Kosuke Murate, “Terahertz Parametric Generation By Collinear Injection Seeding,” IRMMW-THz 2023, Montreal, Canada (Sept. 17-22, 2023).</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Toshiki Kinoshita, Shin'ichiro Hayashi, Kodo Kawase, “Pulse Train Terahertz Wave Parametric Generation,” IRMMW-THz 2023, Montreal, Canada (Sept. 17-22, 2023).</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Gabriel Gandubert, Léo Guiramand, Xavier Ropagnol, Kosuke Murate, François Blanchard, “Noncollinear Parametric Detection Of Broadband Terahertz Pulses,” IRMMW-THz 2023, Montreal, Canada (Sept. 17-22, 2023).</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Naoya Yamamoto, Kodo Kawase, Kosuke Murate, ”Injection-seeded THz Parametric Source with Collinear Setup,” APLS 2023, Hakodate, Japan (Sept. 4-7, 2023).</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, and Kodo Kawase, "Practical measurement system using terahertz parametric generator and detector (Invited)," TeraTech2023, Aizuwakamatsu, Japan (Sept. 4-8, 2023).</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, and Kodo Kawase, "Non-destructive identification through thick materials using a terahertz parametric generator and detector (Invited)," SPIE OPTICS+PHOTONICS 2023, San Diego, USA (Aug. 20-22, 2023).</li>
+                <li>François Blanchard, <strong>Sota Mine</strong>, Rejeena R. Sebastian, Leo Guiramand, Gabriel Gandubert, Xavier Ropagnol, Kosuke Murate, “Broadband terahertz parametric spectrometer,” Advanced Photonics Congress 2023, Busan, Korea (Jul. 9-13, 2023).</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kosuke Murate, Kodo Kawase, “Injection-seeded terahertz parametric generation using high power seeding (Invited),” 2nd Workshop on Progress in Nonlinear Photonics and Applications, Bucharest, Romania (Jul. 2-6, 2023)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase, “Terahertz parametric generator/detector for nondestructive testing (Invited),” 25th Photonics North Conference, Montréal, Canada (June 12-15, 2023).</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, Kosuke Murate, “Detection of concealed reagents using THz parametric generator (Invited),” AES 2023, Torremolinos, Spain (June 5-8, 2023)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Naoya Yamamoto, Kodo Kawase, Kosuke Murate, "Development of coaxial injection-seeded THz parametric generator," ALPS2023, Online (Apr. 17-21, 2023)</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, Kosuke Murate, “THz parametric generation/detection and applications (Invited),” Korea-Japan Workshop on Terahertz Science and Technology 2023, Kyoto, Japan (April 3, 2023).</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, Kosuke Murate, “Injection seeded THz parametric generation, detection, and applications (Invited),” IRPhE'2022, Yerevan, Armenia (Sept. 27-30, 2022).</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Mitsuki Abe, Kodo Kawase, Kosuke Murate, "Development of Efficient Terahertz Parametric Generator using Flat Pump beam," JSAP-Optica-SPP Joint Symposia 2022, Online (Sep. 20-23, 2022)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Mitsuki Abe, Kodo Kawase, Kosuke Murate, "Efficient Is-TPG Spectroscopic System Using Flat Pump Beam," IRMMW-THz 2022, Online (Aug. 28-Sep. 2, 2022)</li>
+                <li>Kodo Kawase, <strong>Sota Mine</strong>, and Kosuke Murate, “Transmission THz spectroscopy through thick shielding (Invited)," CSIR-NPL Colloquium, Govt. of India, Online (May 13, 2022).</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, ”Terahertz-wave generation using cascaded parametric process in LiNbO3 crystal pumped by microchip Nd:YAG laser,” LIC-01, Online (Apr. 20-22, 2022)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Mitsuki Abe, Kodo Kawase, Kosuke Murate, “High-power terahertz parametric generator using a cascade process,” SPIE Photonics West On Demand (Feb. 21-27, 2022)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Development of Noise-free Terahertz Parametric Source," JSAP-OSA Joint Symposia, Online (Sep. 10-13, 2021)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Development Of A High Signal To Noise Ratio Terahertz-wave Parametric Generator (Keynote)," IRMMW-THz 2021, Online (Aug. 29-Sep. 3, 2021).</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Development of a Noise-free Terahertz Parametric Generator using High-Power Injection Seeding", ALPS2021, Online (Apr. 19-21, 2021)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase, "Wide dynamic range real-time terahertz spectrometer using fast wavelength-tunable terahertz parametric generator", SPIE. Photonics West 2021 Digital Forum (Mar. 6-11, 2021)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Fast wavelength switchable external cavity diode laser using digital micromirror device", SPIE. Photonics West 2021 Digital Forum (Mar. 6-11, 2021)</li>
+                <li>Kosuke Murate, <strong>Sota Mine</strong>, Kodo Kawase, "Injection-seeded Terahertz Parametric Generator With Rapid Wavelength Tunability Using Digital Micromirror Device," IRMMW-THz 2020, Online (Nov. 8-13, 2020)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Real-time Spectroscopy Using a Wavelength switching Terahertz Source," OSA Frontiers in Optics + Laser Science, Online (Sept. 14-17, 2020)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Kodo Kawase, Kosuke Murate, "Development of a fast wavelength switchable external cavity semiconductor laser," JSAP-OSA Joint Symposia, Online (Sept. 8-11, 2020)</li>
+            </ol>
+        </div>
+
+        <!-- 3-4. 国内学会・ポスター -->
+        <div id="domestic" class="sub-tab-content">
+            <h2>国内学会口頭発表</h2>
+            <ol>
+                <li>新留祥稔, 嶺颯太, Gandubert Gabriel, Blanchard Francois, 村手宏輔, "Ybファイバーレーザー励起LiNbO3導波路によるチェレンコフ位相整合型テラヘルツ時間領域分光法", 第87回応用物理学会秋季学術講演会, 北海道大学 (2026/9/8-11)</li>
+                <li>河上太知, 嶺颯太, 川瀬晃道, 村手宏輔, "２波長テラヘルツパラメトリック発生を用いたシングルピクセルイメージング", 第87回応用物理学会秋季学術講演会, 北海道大学 (2026/9/8-11)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 川瀬晃道, 村手宏輔, "テラヘルツパラメトリック分光器を用いた非破壊センシング (招待講演)," テラヘルツ波科学技術産学連携委員会第63回研究会, 岡山大学 (2026/5/13)</li>
+                <li>山口晴也, 鈴木亮介, 嶺颯太, 川瀬晃道, 村手宏輔, ”高次ストークス光を用いた多波長テラヘルツパラメトリック発生によるリアルタイム分光”、レーザー学会中部支部2025年度若手研究発表会 (2026/1/5)</li>
+                <li>河野楓雅, 嶺颯太, 川瀬晃道, 村手宏輔, "テラヘルツパラメトリック検出の位相検出への応用" レーザー学会中部支部2025年度若手研究発表会 (2026/1/5)</li>
+                <li>河上太知, 嶺颯太, 川瀬晃道, 村手宏輔, テラヘルツパラメトリック発生器を用いた遮蔽物越しのシングルピクセルイメージング”, シンポジウム「テラヘルツ科学の最先端XII」, 徳島大学 (2025/10/15-17)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 川瀬晃道, 村手宏輔, “単色励起光による波長可変テラヘルツ光源の開発”, シンポジウム「テラヘルツ科学の最先端XII」, 徳島大学 (2025/10/15-17)</li>
+                <li>安部魁人, 嶺颯太, 中島周作, François Blanchard, 川瀬晃道, 村手宏輔, 大谷知行, “テラヘルツパラメトリック発生のサブピコ秒励起におけるパルス幅依存性”, シンポジウム「テラヘルツ科学の最先端XII」, 徳島大学 (2025/10/15-17)</li>
+                <li>鈴木亮介, 嶺颯太, 川瀬晃道, 村手宏輔, 高次ストークス光を用いた多波長テラヘルツ波パラメトリック発生によるリアルタイム分光”, シンポジウム「テラヘルツ科学の最先端XII」, 徳島大学 (2025/10/15-17)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 川瀬晃道, 村手宏輔, "励起光源1台のみで構成されるテラへルツパラメトリック光源", 第86回応用物理学会秋季学術講演会, 名城大学 (2025/9/7-10)</li>
+                <li>田中志貴, 嶺颯太, 川瀬晃道, 村手宏輔, “スラブ導波路型LiNbO3を用いたテラヘルツパラメトリック発生の高効率化”, 第72回応用物理学会春季学術講演会, 東京理科大学野田キャンパス (2025/3/14-17)</li>
+                <li>新留祥稔, 嶺颯太, 川瀬晃道, 村手宏輔, “光注入型テラヘルツ波パラメトリック発生器におけるLiNbO3 結晶内部のプロービング”, 第72回応用物理学会春季学術講演会, 東京理科大学野田キャンパス (2025/3/14-17)</li>
+                <li>木下知紀, 嶺颯太, 林伸一郎, 川瀬晃道, 村手宏輔, “リモートセンシング応用に向けたパルストレイン励起光によるテラヘルツパラメトリック検出”, レーザー学会学術講演会第45回年次大会, 広島国際会議場 (2025/1/21-23)</li>
+                <li>井上日勇和, 嶺颯太, 川瀬晃道, 村手宏輔, “テラヘルツパラメトリック検出の極めて大きな入射角度トレランスの発見”, レーザー学会学術講演会第45回年次大会, 広島国際会議場 (2025/1/21-23)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 新留祥稔, 川瀬晃道, 村手宏輔, “パラメトリック光源におけるテラヘルツ波発生過程の可視化”, レーザー学会学術講演会第45回年次大会, 広島国際会議場 (2025/1/21-23)</li>
+                <li>川瀬晃道, 嶺颯太, 村手宏輔, “テラヘルツパラメトリック発生検出の新展開 (招待講演)”, レーザー学会学術講演会第45回年次大会, 広島国際会議場 (2025/1/21-23)</li>
+                <li>坪田浩弥, 嶺颯太, 川瀬晃道, 村手宏輔, ”パラメトリック波長変換を用いたテラヘルツスキャナーの開発” レーザー学会中部支部2024年度若手研究発表会, 名古屋大学 (2025/1/6)</li>
+                <li>新留祥稔, 嶺颯太, 川瀬晃道, 村手宏輔, ”光注入型テラヘルツ波パラメトリック発生器におけるLiNbO3結晶内部の強度プロービング” レーザー学会中部支部2024年度若手研究発表会, 名古屋大学 (2025/1/6)</li>
+                <li>川瀬晃道, 嶺颯太, 村手宏輔, “テラヘルツパラメトリック光源の進展 (招待講演),” レーザー学会第590回研究会, 名古屋大学 (2024/11/22)</li>
+                <li>田中志貴, 嶺颯太, 川瀬晃道, 村手宏輔, “LiTaO3を用いたテラヘルツパラメトリック検出の低周波領域の高感度化”, シンポジウム「テラヘルツ科学の最先端XI」, 福井大学 (2024/10/17-18)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, Blanchard François, 大谷知行, 川瀬晃道, 村手宏輔, “広帯域テラヘルツ波の周波数領域におけるワンショット検出”, テラへルツ科学の最先端XI, 福井大学 (2024/10/16-17)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 田中志貴, 川瀬晃道, 村手宏輔, “LiTaO3を用いたテラヘルツパラメトリック検出”, 第85回応用物理学会秋季学術講演会, 朱トキメッセ (2024/9/16-20)</li>
+                <li>鈴木亮介, 嶺颯太, 川瀬晃道, 村手宏輔, “高次ストークス光を用いた多波長テラヘルツ波パラメトリック発生”, 第85回応用物理学会秋季学術講演会, 朱トキメッセ (2024/9/16-20)</li>
+                <li>木下知紀, 嶺颯太, 林伸一郎, 川瀬晃道, 村手宏輔, “パルストレイン励起光を用いたテラヘルツパラメトリック検出”, 第85回応用物理学会秋季学術講演会, 朱トキメッセ (2024/9/16-20)</li>
+                <li>種谷知樹, 嶺颯太, 川瀬晃道, 村手宏輔, “遮蔽物越しのテラヘルツ波シングルピクセル分光イメージング”, 第85回応用物理学会秋季学術講演会, 朱トキメッセ (2024/9/16-20)</li>
+                <li>種谷知樹, 前中憲斗, 嶺颯太, 川瀬晃道, 村手宏輔, “テラヘルツ波を用いた遮蔽物越しのシングルピクセル分光イメージング”, 令和5年度レーザー学会中部支部若手研究発表会 (2023/12/22)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, Blanchard François, 大谷知行, 川瀬晃道, 村手宏輔, “広帯域テラヘルツ波パラメトリック検出”, 第71回応用物理学会春季学術講演会, 東京都市大学 (2024/3/22-25)</li>
+                <li>井上日勇和, 嶺颯太, 川瀬晃道, 村手宏輔, “プリズム結合器不要のテラヘルツパラメトリック検出法”, 第71回応用物理学会春季学術講演会, 東京都市大学 (2024/3/22-25)</li>
+                <li>村手宏輔, 嶺颯太, 川瀬晃道, "多波長テラヘルツパラメトリック発生による郵便物非開披検査 (招待講演)," 日本光学会「第50回冬期講習会」 (2024/1/25-26)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 山本直弥, 川瀬晃道, 村手宏輔, ”同軸入射2波長による光注入型テラへルツパラメトリック発生”, レーザー学会学術講演会 第44回年次大会, 日本科学未来館 (2024/1/16-19)</li>
+                <li>清水健太, 江本直隆, 嶺颯太, 川瀬晃道, 村手宏輔, “テラヘルツ波パラメトリック検出を用いた位相測定”, テラヘルツ科学の最先端X, 東北大学 (2023/12/20-21)</li>
+                <li>山本直弥, 嶺颯太, 川瀬晃道, 村手宏輔, “サブナノ秒パルスを用いた端面反射位相整合によるテラヘルツパラメトリック発生”, 第84回応用物理学会秋季学術講演会, 熊本城ホール (2023/9/19-22)</li>
+                <li>木下知紀, 嶺颯太, 林伸一郎, 川瀬晃道, 村手宏輔, “テラヘルツパラメトリック光源によるパルストレインテラヘルツ波発生”, 第84回応用物理学会秋季学術講演会, 熊本城ホール (2023/9/19-22)</li>
+                <li>清水健太, 嶺颯太, 川瀬晃道, 村手宏輔, “粉末試薬の高精度識別に向けたテラヘルツ分光器の開発”, 第84回応用物理学会秋季学術講演会, 熊本城ホール (2023/9/19-22)</li>
+                <li>村手宏輔, 嶺颯太, 川瀬晃道, "テラヘルツパラメトリック発生／検出による高ダイナミックレンジ分光識別 (招待講演),” 第27回福井セミナー, 福井大学 (2023/8/9-10)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 山本直弥, 川瀬晃道, 村手宏輔, ”同軸光注入型テラへルツパラメトリック発生器”, 第70回応用物理学会春季学術講演会, 上智大学 (2023/3/15-18)</li>
+                <li>阿部光樹, 嶺颯太, 川瀬晃道, 村手宏輔, “扁平励起光を用いたテラヘルツパラメトリック発生”, レーザー学会学術講演会第43回年次大会, ウインクあいち (2023/1/18-20)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 阿部光樹, 川瀬晃道, 村手宏輔, "カスケードプロセスを用いたテラヘルツパラメトリック発生器", 第69回応用物理学会春季学術講演会, WEB開催 (2022/3/22-26)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 川瀬晃道, 村手宏輔, "ノイズフリーテラヘルツパラメトリック発生器," レーザー学会学術講演会第42回年次大会, WEB開催 (2022/1/13)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 川瀬晃道, 村手宏輔, "高強度光注入によるTHzパラメトリック発生器のノイズフリー化", 第68回応用物理学会春季学術講演会, WEB開催 (2021/3/16-19)</li>
+                <li>村手宏輔, 嶺颯太, 川瀬晃道, "離散波長可変テラヘルツパラメトリック発生を用いたリアルタイム分光器", 第41回レーザー学会学術講演会, WEB開催 (2021/1/18-20)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 川瀬晃道, 村手宏輔, "高速波長切替型テラヘルツ分光器の開発", 2020年度レーザー学会中部支部若手研究発表会, WEB開催 (2020/12/18)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 川瀬晃道, 村手宏輔, "デジタルマイクロミラーデバイスを用いたリアルタイムテラヘルツ分光器の開発", テラヘルツ科学の最先端VII, WEB開催 (2020/11/19-20)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 川瀬晃道, 村手宏輔, "高速波長切替えテラヘルツパラメトリック発生器", 第81回応用物理学会秋季学術講演会, WEB開催 (2020/9/11)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 村手宏輔, 川瀬晃道, "リアルタイムテラヘルツ分光器のための多波長外部共振器型半導体レーザーの開発", 第67回応用物理学会春季学術講演会, 上智大学 (2020/3/12-15)</li>
+                <li class="first-author"><strong>嶺颯太</strong>, 村手宏輔, 川瀬晃道, ”多波長テラヘルツパラメトリック発生に向けた外部共振器型半導体レーザーの開発”, レーザー学会学術講演会 第40回年次大会, 仙台国際センター (2020/1/20-22)</li>
+            </ol>
+
+            <h2>ポスター発表</h2>
+            <ol>
+                <li>田中志貴, 嶺颯太, 川瀬晃道, 村手宏輔, "LiNbO3を用いたテラヘルツパラメトリック検出におけるZ面入射時の特性評価", 第86回応用物理学会秋季学術講演会, 名城大学 (2025/9/7-10)</li>
+                <li>Akitoshi Niidome, Sota Mine, Kodo Kawase, Kosuke Murate, "Intensity Probing inside Crystals of Terahertz Parametric Oscillator," InCEPTT, New Delhi, India (2024/12/1-4)</li>
+                <li>Toshiki Kinoshita, Sota Mine, Shin’ichiro Hayashi, Kodo Kawase, Kosuke Murate, "Terahertz parametric detection utilizing pulse train pump beam," IW-FIRT 2024, University of Fukui, Japan (2024/10/16-17)</li>
+                <li>Tomoki Tanetani, Sota Mine, Kodo Kawase, Kosuke Murate, "Single-Pixel Spectroscopic Imaging Through Packaging Materials Using a Terahertz Parametric Generator," IW-FIRT 2024, University of Fukui, Japan (2024/10/16-17)</li>
+                <li>Hyuga Inoue, Sota Mine, Kodo Kawase, Kosuke Murate, "Extremely Large Angular Tolerance of Terahertz Parametric Detector," IW-FIRT 2024, University of Fukui, Japan (2024/10/16-17)</li>
+                <li>前中憲斗, 董徳辰, 嶺颯太, 川瀬晃道, 村手宏輔, “テラヘルツパラメトリック発生器を用いた遮蔽物越しのシングルピクセルイメージング“, レーザー学会第43回年次大会, ウインクあいち (2023/1/18-20)</li>
+                <li class="first-author"><strong>Sota Mine</strong>, Gabriel Gandubert, Xavier Ropagnol, Kosuke Murate, François Blanchard, “Terahertz Detection Using A Ridge Waveguide,” IRMMW-THz 2023, Montreal, Canada (2023/9/17-22)</li>
+            </ol>
+        </div>
+
+        <!-- 3-5. 記事・特許・予算 -->
+        <div id="others" class="sub-tab-content">
+            <h2>解説記事・書籍</h2>
+            <ol>
+                <li>川瀬晃道, 種谷知樹, <strong>嶺颯太</strong>, 村手宏輔, “is-TPGを用いたシングルピクセルイメージング,” <em>電子情報通信学会誌</em>, Vol.108, No.10, pp.962-967 (2025/10/1).</li>
+                <li>村手宏輔, 種谷知樹, <strong>嶺颯太</strong>, 川瀬晃道, “THz波を用いた遮蔽物越しのシングルピクセル分光イメージング”, <em>月刊OPTRONICS</em>, No.9, pp.72-77 (2024/9/10)</li>
+                <li><strong>嶺颯太</strong>, 川瀬晃道, ”遮蔽物越しのテラヘルツ分光イメージング技術とその応用事例”, <em>テラヘルツ波の発生、検出、制御技術と最新応用</em>, ISBN：978-4-86798-028-6 (2024/7/31)</li>
+            </ol>
+
+            <h2>特許</h2>
+            <ol>
+                <li class="first-author"><strong>Sota Mine</strong>, Kosuke Murate, François Blanchard, International application No.PCT/CA2024/050440, International filing date: 5 April 2024, Title: <em>SYSTEM AND METHOD FOR PARAMETRIC DETECTION OF BROADBAND TERAHERTZ PULSES</em></li>
+            </ol>
+
+            <h2>獲得予算（研究代表者）</h2>
+            <ol>
+                <li>日本学術振興会, 特別研究員 DC1 (2022/4 - 2025/3)</li>
+                <li>日本学術振興会, 若手研究者海外挑戦プログラム (2022/9 - 2023/1)</li>
+                <li>小牧市, 小牧市大学生等海外留学奨学生 (2022/9 - 2023/1)</li>
+                <li>日本学術振興会, 研究活動スタート支援, 「テラへルツパラメトリック波長変換によるTHz-TDSの検出限界打破」, 2,600千円 (2025/7 - 2027/3)</li>
+                <li>理化学研究所 基礎特別研究員追加予算</li>
+                <li>コニカミノルタ画像科学奨励賞</li>
+                <li>日本学術振興会, 挑戦的研究(萌芽), 「<a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-26K22749/" target="_blank" rel="noopener">テラヘルツ波リアルタイム時間－周波数観測のためのウェーブレット光学の創成</a>」, 6,500千円 (2026/6 - 2028/3)</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- タブ切り替え専用スクリプト -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const subTabButtons = document.querySelectorAll('.sub-tab-button');
+        const subTabContents = document.querySelectorAll('.sub-tab-content');
+
+        // メインタブ（ホーム・研究紹介・研究成果）を表示する
+        const openTab = (targetId) => {
+            const targetContent = document.getElementById(targetId);
+            const targetButton = document.querySelector(`.tab-button[data-tab="${targetId}"]`);
+            if (!targetContent || !targetButton) return;
+
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            targetButton.classList.add('active');
+            targetContent.classList.add('active');
+        };
+
+        // 研究成果の中のサブタブ（論文・受賞など）を表示する
+        const openSubTab = (targetId) => {
+            const targetContent = document.getElementById(targetId);
+            const targetButton = document.querySelector(`.sub-tab-button[data-subtab="${targetId}"]`);
+            if (!targetContent || !targetButton) return;
+
+            subTabButtons.forEach(btn => btn.classList.remove('active'));
+            subTabContents.forEach(content => content.classList.remove('active'));
+            targetButton.classList.add('active');
+            targetContent.classList.add('active');
+        };
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => openTab(button.getAttribute('data-tab')));
+        });
+
+        subTabButtons.forEach(button => {
+            button.addEventListener('click', () => openSubTab(button.getAttribute('data-subtab')));
+        });
+
+        // ページ内のリンクから別のタブを開く（例：「研究紹介を詳しく見る」）
+        document.querySelectorAll('[data-open-tab]').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                openTab(link.getAttribute('data-open-tab'));
+                document.querySelector('.tabs').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // URL の末尾で最初に開くタブを指定できる
+        //   例）#research → 研究紹介、#achievements → 研究成果、#papers → 研究成果の「論文」
+        const hash = location.hash.replace('#', '');
+        if (document.querySelector(`.sub-tab-button[data-subtab="${hash}"]`)) {
+            openTab('achievements');
+            openSubTab(hash);
+        } else if (hash) {
+            openTab(hash);
+        }
+    });
+</script>
+
+</body>
+</html>

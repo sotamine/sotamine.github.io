@@ -1,0 +1,1062 @@
+/* ==========================================================
+   嶺 颯太 ホームページ 共通スタイル
+   （プロフィール・論文などの各タブ ＋ 研究紹介タブ）
+   ========================================================== */
+
+/* カラー・変数定義 */
+:root {
+    --primary-color: #0f2c59;      /* 深みのあるダークネイビー */
+    --accent-color: #2563eb;       /* ロイヤルブルー */
+    --accent-hover: #1d4ed8;       /* ホバー用ブルー */
+    --bg-color: #f8fafc;           /* 全体背景 */
+    --card-bg: #ffffff;            /* コンテナ・カード背景 */
+    --text-primary: #1e293b;       /* メイン文字 */
+    --text-secondary: #64748b;     /* サブ文字 */
+    --border-color: #e2e8f0;       /* 境界線 */
+    --highlight-bg: #eff6ff;       /* 筆頭著者ハイライト背景 */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.02);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--text-primary);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 40px 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    padding: 40px 48px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+
+/* ヘッダー */
+header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+}
+
+h1 {
+    margin: 0 0 4px 0;
+    color: var(--primary-color);
+    font-size: 2.1em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+h1 span {
+    color: var(--text-secondary);
+    font-size: 0.55em;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+/* 連絡先情報と四角い写真の横並びレイアウト */
+.contact-with-image {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: var(--bg-color);
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info p {
+    margin: 4px 0;
+    color: var(--text-secondary);
+}
+
+.contact-info strong {
+    color: var(--text-primary);
+}
+
+/* 四角いプロフィール写真スタイル */
+.profile-image-container {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 12px; /* モダンな角丸四角形 */
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-image:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* タブナビゲーション */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 32px;
+    gap: 8px;
+}
+
+.tab-button {
+    padding: 12px 20px;
+    border: none;
+    background: none;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    border-radius: 6px 6px 0 0;
+}
+
+.tab-button:hover {
+    color: var(--accent-color);
+    background-color: rgba(37, 99, 235, 0.04);
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px 3px 0 0;
+}
+
+/* タブコンテンツアニメーション */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 研究成果の中のサブタブ（論文・受賞・国際学会 など） */
+.sub-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 6px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.sub-tab-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 7px;
+    background: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sub-tab-button:hover {
+    color: var(--accent-color);
+    background-color: rgba(37, 99, 235, 0.06);
+}
+
+.sub-tab-button.active {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.sub-tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.sub-tab-content.active {
+    display: block;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.35em;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1.1em;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* 論文・発表カードリスト */
+ol, ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+ol > li {
+    counter-increment: item;
+    position: relative;
+    padding: 12px 16px 12px 42px;
+    margin-bottom: 10px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+ol > li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 0.9em;
+}
+
+ol > li:hover {
+    border-color: #cbd5e1;
+    box-shadow: var(--shadow-sm);
+}
+
+/* 筆頭著者 (1st author) 強調表示 */
+.first-author {
+    background-color: var(--highlight-bg) !important;
+    border-color: #bfdbfe !important;
+    border-left: 4px solid var(--accent-color) !important;
+}
+
+.first-author strong {
+    color: var(--primary-color);
+}
+
+/* ホーム：研究について */
+.research-summary {
+    margin: 0;
+    padding: 18px 22px;
+    background-color: var(--highlight-bg);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 8px;
+    line-height: 1.9;
+}
+
+.more-link {
+    text-align: right;
+    margin: 8px 0 0;
+    font-size: 0.9em;
+}
+
+/* ホーム：研究者情報リンク（Google Scholar・researchmap） */
+.profile-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.profile-link {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.profile-link:hover {
+    text-decoration: none;
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.profile-link-name {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.profile-link-name::after {
+    content: " ↗";
+    color: var(--accent-color);
+}
+
+.profile-link-desc {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+/* 経歴・学歴タイムライン */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 110px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 135px;
+    margin-bottom: 16px;
+    font-size: 0.95em;
+    background: none;
+    border: none;
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    color: var(--primary-color);
+    width: 100px;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.timeline li::after {
+    content: '';
+    position: absolute;
+    left: 106px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 2px solid var(--accent-color);
+}
+
+/* リンク */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 24px 20px;
+    }
+
+    .contact-with-image {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tabs {
+        gap: 2px;
+    }
+
+    .sub-tab-button {
+        flex: 1 1 auto;
+        padding: 8px 10px;
+        font-size: 0.85em;
+    }
+
+    .tab-button {
+        padding: 8px 12px;
+        font-size: 0.85em;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline li {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .timeline-date {
+        position: static;
+        display: block;
+        text-align: left;
+        margin-bottom: 2px;
+        color: var(--accent-color);
+    }
+
+    .timeline li::after {
+        display: none;
+    }
+}
+    
+
+/* ==========================================================
+   研究紹介タブ（テラヘルツ波を用いた非破壊センシング）
+   ※ 他のタブに影響しないよう、すべて .research の中だけに適用
+   ========================================================== */
+.research {
+    --r-thz: #156082;          /* テラヘルツ帯の色 */
+    --r-soft: #e8f1fb;         /* 薄い青 */
+    --r-gray: #f1f5f9;         /* カード背景 */
+    --r-orange: #e97132;       /* 強調文字 */
+    --r-ok: #16a34a;
+    --r-ng: #dc2626;
+}
+
+.research img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.research h3 {
+    color: var(--primary-color);
+}
+
+.research .r-section {
+    margin-bottom: 48px;
+    scroll-margin-top: 16px;
+}
+
+.research .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* 文献 */
+.research .cite {
+    font-size: 0.8em;
+    color: var(--text-secondary);
+    margin: 8px 0 0;
+    font-style: italic;
+}
+
+.research .cite-center {
+    text-align: center;
+}
+
+/* ---------- メインビジュアル ---------- */
+.research-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: #ffffff;
+    text-align: center;
+    padding: 44px 24px;
+    border-radius: 12px;
+}
+
+.research-hero-label {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 3px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-bottom: 14px;
+}
+
+.research-hero-title {
+    font-size: 1.9em;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 14px;
+}
+
+.research-hero-lead {
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* ---------- ページ内リンク ---------- */
+.research-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 8px;
+}
+
+.research-nav a {
+    font-size: 0.85em;
+    padding: 4px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: var(--text-primary);
+    background: var(--bg-color);
+}
+
+.research-nav a:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* ---------- テラヘルツ波とは ---------- */
+.research .spectrum-band {
+    margin-bottom: 24px;
+}
+
+.research .band-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+.research .band {
+    background: #e8e8e8;
+    text-align: center;
+    padding: 12px 4px;
+    font-weight: 700;
+    font-size: 0.95em;
+    white-space: nowrap;
+}
+
+.research .band-thz {
+    background: var(--r-thz);
+    color: #ffffff;
+    font-size: 1.05em;
+}
+
+/* 0.3 THz / 10 THz の目盛り（テラヘルツ波の両端） */
+.research .band-scale {
+    position: relative;
+    height: 1.6em;
+    font-size: 0.85em;
+    color: var(--text-secondary);
+}
+
+.research .band-scale span {
+    position: absolute;
+    top: 4px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.research .scale-left  { left: 25%; }
+.research .scale-right { left: 50%; }
+
+.research .property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.research .property {
+    background: var(--r-soft);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.research .property h3 {
+    margin: 0 0 4px;
+    font-size: 1.15em;
+}
+
+.research .property p {
+    margin: 0;
+    font-size: 0.92em;
+}
+
+.research .figure {
+    margin: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.research .figure-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.research .figure img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.research .figure-note {
+    font-size: 0.85em;
+    margin: 8px 0 0;
+    color: var(--text-secondary);
+}
+
+/* ---------- 透過するもの・しないもの ---------- */
+.research .box {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.research .box h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+.research .box p {
+    margin-bottom: 0;
+}
+
+.research .box.ok { border-top: 4px solid var(--r-ok); }
+.research .box.ng { border-top: 4px solid var(--r-ng); }
+.research .box.ok h3 { color: var(--r-ok); }
+.research .box.ng h3 { color: var(--r-ng); }
+
+/* ---------- 比較表 ---------- */
+.research .table-container {
+    overflow-x: auto;
+}
+
+.research table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+    font-size: 0.92em;
+}
+
+.research th,
+.research td {
+    border: 1px solid var(--border-color);
+    padding: 11px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.research th {
+    background-color: #334155;
+    color: #ffffff;
+}
+
+.research .th-sub {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.research td:first-child {
+    text-align: left;
+}
+
+.research tbody tr:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+/* 本研究室の列を強調 */
+.research .highlight-header {
+    background-color: var(--accent-color) !important;
+    border-left: 3px solid var(--primary-color);
+    border-right: 3px solid var(--primary-color);
+}
+
+.research .highlight-col {
+    background-color: var(--highlight-bg) !important;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-left: 3px solid var(--accent-color);
+    border-right: 3px solid var(--accent-color);
+}
+
+.research .note-bar {
+    margin: 18px 0 0;
+    background: var(--r-gray);
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/* ---------- 技術の強み ---------- */
+.research .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.research .feature-card {
+    background: var(--r-soft);
+    border-radius: 8px;
+    padding: 22px;
+    border-left: 5px solid var(--accent-color);
+}
+
+.research .feature-card h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+.research .feature-card p {
+    margin-bottom: 0;
+}
+
+.research .accent {
+    color: var(--r-orange);
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* ---------- イメージング例 ---------- */
+.research .imaging-grid {
+    display: grid;
+    grid-template-columns: 9fr 10fr; /* 左右の高さがほぼ揃う比率 */
+    grid-template-rows: auto auto;
+    gap: 18px;
+}
+
+.research .imaging-card {
+    background: var(--r-gray);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.research .imaging-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.02em;
+}
+
+/* 左の大きいカード：2段分の高さを使い、下に空白を作らない */
+.research .imaging-tall {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.research .imaging-fill {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research .imaging-tall img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.research .imaging-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.research .imaging-row img {
+    border-radius: 4px;
+    background: #ffffff;
+    min-width: 0;
+}
+
+.research .img-small  { flex: 0 1 28%; }
+.research .img-narrow { flex: 0 1 8%; }
+.research .img-wide   { flex: 1 1 60%; }
+
+.research .caption {
+    font-size: 0.85em;
+    margin: 10px 0 0;
+}
+
+/* ---------- 測定システム ---------- */
+.research .system-layout {
+    display: grid;
+    grid-template-columns: 1fr auto 1.6fr 1fr;
+    align-items: center;
+    gap: 16px;
+    background: var(--r-gray);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.research .system-photo {
+    margin: 0;
+}
+
+.research .system-photo figcaption {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.research .system-photo img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.research .system-plus {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.research .photo-wrap {
+    position: relative;
+}
+
+.research .photo-label {
+    position: absolute;
+    right: 6%;
+    bottom: 22%;
+    background: #ffffff;
+    padding: 2px 8px;
+    font-weight: 700;
+    font-size: 0.85em;
+}
+
+/* 54 cm の寸法線 */
+.research .dimension {
+    position: relative;
+    margin-top: 10px;
+    height: 24px;
+    border-top: 2px solid var(--r-ng);
+}
+
+.research .dimension::before,
+.research .dimension::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    border: 6px solid transparent;
+}
+
+.research .dimension::before {
+    left: -2px;
+    border-right-color: var(--r-ng);
+    border-left-width: 0;
+}
+
+.research .dimension::after {
+    right: -2px;
+    border-left-color: var(--r-ng);
+    border-right-width: 0;
+}
+
+.research .dimension span {
+    display: block;
+    text-align: center;
+    color: var(--r-ng);
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.research .spec-box {
+    background: #ffffff;
+    border-left: 5px solid var(--accent-color);
+    padding: 16px 18px;
+    border-radius: 8px;
+}
+
+.research .spec-box h3 {
+    margin-top: 0;
+    font-size: 1.08em;
+}
+
+.research .spec-box ul {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+}
+
+.research .spec-box li {
+    margin-bottom: 6px;
+    font-size: 0.95em;
+}
+
+/* ---------- 想定される用途 ---------- */
+.research .app-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.research .app-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--r-gray);
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+.research .app-icon {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+}
+
+.research .app-item h3 {
+    margin: 0;
+    font-size: 1.02em;
+}
+
+.research .app-item p {
+    margin: 0;
+    font-size: 0.88em;
+}
+
+/* ---------- お問い合わせ ---------- */
+.research .research-contact {
+    background: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 28px 20px;
+    border-radius: 12px;
+    margin-bottom: 0;
+}
+
+.research .research-contact p {
+    margin: 4px 0;
+}
+
+.research .research-contact-name {
+    font-weight: 700;
+    font-size: 1.05em;
+    margin-bottom: 10px !important;
+}
+
+.research .research-contact small {
+    opacity: 0.8;
+}
+
+.research .research-contact a {
+    color: #93c5fd;
+    word-break: break-all;
+}
+
+/* ---------- 研究紹介タブのレスポンシブ ---------- */
+@media (max-width: 860px) {
+    .research .imaging-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research .imaging-tall {
+        grid-row: auto;
+    }
+
+    .research .system-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .research .system-plus {
+        text-align: center;
+        line-height: 1;
+    }
+
+    .research .app-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .research-hero {
+        padding: 30px 16px;
+    }
+
+    .research-hero-title {
+        font-size: 1.4em;
+    }
+
+    .research .band-row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .research .band-thz {
+        grid-column: span 2;
+    }
+
+    .research .band-scale {
+        display: none;
+    }
+
+    .research .imaging-row {
+        flex-wrap: wrap;
+    }
+
+    .research .img-wide {
+        flex-basis: 100%;
+    }
+
+    .research .app-grid {
+        grid-template-columns: 1fr;
+    }
+}
